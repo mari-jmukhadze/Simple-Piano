@@ -8,8 +8,14 @@ function play_audio(key){
 function get_value(){
    var val = document.getElementById('keys').value;
    var notes = val.split(',')
-   // notes.push
-   for (let i = 0; i < notes.length; i++){
-      play_audio(notes[i])
+
+   var i = 0
+   var fun = function () {
+      play_audio(notes[i]);
+      i++
+      if (i < notes.length) {
+         window.setTimeout(fun, 500)
+      }
    }
+   fun()
 }
