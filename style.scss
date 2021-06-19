@@ -15,11 +15,25 @@ body {
     width: auto;
     height: 500px;
     border: 1px solid grey;
+    background-color: rgb(46, 44, 44);
     margin-top: 100px;
     display: flex;
     flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-around;
     padding: 9px;
 }
+
+.input {
+    height: 50px;
+    #btn {
+        width: 30%;
+    }
+    #keys {
+        width: 60%;
+    }
+}
+
 
 .white, .sharp{
     width: 125px;

@@ -7,47 +7,62 @@
         <title>Piano</title>
     </head>
     <body>
+        <p id="intstruction">
+            Separate keys with only commas (",")
+        </p>
+        <div class="container input">
+            <input type="text" id="keys" placeholder="Enter Keys here">
+            <button type="submit" onclick="get_value()" id="btn"></button>
+        </div>
         <div class="container" id="piano">
             <div class="tile white" id="C" onclick="play_audio(this.id)">
                 <p class="label">C</p>
                 <audio src="http://carolinegabriel.com/demo/js-keyboard/sounds/040.wav"></audio>
                 
             </div>
-            <div class="tile sharp" id="C#" onclick="">
+            <div class="tile sharp" id="C#" onclick="play_audio(this.id)">
                 <p class="label">C#</p>
-                
+                <audio src="http://carolinegabriel.com/demo/js-keyboard/sounds/041.wav"></audio>
             </div>
-            <div class="tile white" id="D">
+            <div class="tile white" id="D" onclick="play_audio(this.id)">
                 <p class="label">D</p>
+                <audio src="http://carolinegabriel.com/demo/js-keyboard/sounds/042.wav"></audio>
             </div>
-            <div class="tile sharp" id="D#">
+            <div class="tile sharp" id="D#" onclick="play_audio(this.id)">
                 <p class="label">D#</p>
-            
+                <audio src="http://carolinegabriel.com/demo/js-keyboard/sounds/043.wav"></audio>
             </div>
-            <div class="tile white" id="E">
+            <div class="tile white" id="E" onclick="play_audio(this.id)">
                 <p class="label">E</p>
+                <audio src="http://carolinegabriel.com/demo/js-keyboard/sounds/044.wav"></audio>
             </div>
-            <div class="tile white" id="F">
+            <div class="tile white" id="F" onclick="play_audio(this.id)">
                 <p class="label">F</p>
+                <audio src="http://carolinegabriel.com/demo/js-keyboard/sounds/045.wav"></audio>
             </div>
-            <div class="tile sharp" id="F#">
+            <div class="tile sharp" id="F#" onclick="play_audio(this.id)">
                 <p class="label">F#</p>
+                <audio src="http://carolinegabriel.com/demo/js-keyboard/sounds/046.wav"></audio>
             </div>
-            <div class="tile white" id="G"
-            ><p class="label">G</p>
+            <div class="tile white" id="G" onclick="play_audio(this.id)">
+                <p class="label">G</p>
+                <audio src="http://carolinegabriel.com/demo/js-keyboard/sounds/047.wav"></audio>
             </div>
-            <div class="tile sharp" id="G#">
+            <div class="tile sharp" id="G#" onclick="play_audio(this.id)">
                 <p class="label">G#</p>
+                <audio src="http://carolinegabriel.com/demo/js-keyboard/sounds/048.wav"></audio>
             </div>
-            <div class="tile white" id="A">
+            <div class="tile white" id="A" onclick="play_audio(this.id)">
                 <p class="label">A</p>
+                <audio src="http://carolinegabriel.com/demo/js-keyboard/sounds/049.wav"></audio>
             </div>
-            <div class="tile sharp" id="A#"
-            >
+            <div class="tile sharp" id="A#" onclick="play_audio(this.id)">
                 <p class="label">A#</p>
+                <audio src="http://carolinegabriel.com/demo/js-keyboard/sounds/050.wav"></audio>
             </div>
-            <div class="tile white" id="B">
+            <div class="tile white" id="B" onclick="play_audio(this.id)">
                 <p class="label">B</p>
+                <audio src="http://carolinegabriel.com/demo/js-keyboard/sounds/051.wav"></audio>
             </div>
         </div>
         <!-- <button class="tile" id="C">
